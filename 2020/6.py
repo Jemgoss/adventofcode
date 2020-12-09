@@ -4,5 +4,5 @@ with open("6.input") as f:
 # Part 1
 print(sum([len(set(list(group.replace("\n", "")))) for group in data]))
 
-# Part2
+# Part 2
 print(sum([len(set.intersection(*[set(list(g)) for g in group.split("\n")])) for group in data]))
