@@ -17,8 +17,8 @@ Part 2 is just an extension of the same algorithm.
 
 ## Day 2
 
-Using a RegEx to do the heavy lifting.
-Note the use of chaining comparison operators: `a <= b <= c`.
+Using a RegEx to do the heavy lifting. Note precompiled pattern so it can be applied to data set more efficiently.
+Also note the use of chaining comparison operators: `a <= b <= c`.
 
 Part 2 uses an `xor` type comparison: `((a == c) != (b == c))`.
 
@@ -64,6 +64,6 @@ Part 2 uses a generator function to fix up programs. Wait until it runs without 
 
 ## Day 9
 
-Using itertools.combinations() again to generrate the combinations to test.
+Using itertools.combinations() again to generate the combinations to test.
 
-Had a go at a JS version. Managed to do part 1 in as a one-liner but couldn;t figure out how to do part 2 in one line. So basically mimicked the py version.
+Had a go at a JS version. Managed to do part 1 in as a one-liner but couldn't figure out how to do part 2 in one line. So basically mimicked the py version.
