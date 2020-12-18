@@ -67,3 +67,29 @@ Part 2 uses a generator function to fix up programs. Wait until it runs without 
 Using itertools.combinations() again to generate the combinations to test.
 
 Had a go at a JS version. Managed to do part 1 in as a one-liner but couldn't figure out how to do part 2 in one line. So basically mimicked the py version.
+
+## Day 10
+
+Part 1 was simple enough but I definitely failed the interview test for part 2. I spent ages trying to figure this out. As I was googling around on StackExchange for some python constructs on counting combinations, I found a neat use of the Counter over a sequence. I rewrote my part 1 and finally figured out a succinct way to do part 2. This is the first solution where I wasn't *completely* unaided.
+
+## Day 11
+
+Grunt work. Not the prettiest solution. Not going to clean it up.
+
+## Day 12
+
+More grunt work. I'm sure it can be done without using trig, which seems unnecessary for right angles. Again, not the prettiest solution and not going to improve it.
+
+## Day 13
+
+Part 1 was pretty straightforward. For part 2, I figured out an algorithm fairly quickly and it worked for all the test data sets but for some reason I just couldn't get it to work on the puzzle input. Eventually I realized it was a simple oversight (I had to account for the bus position being greater than the periodicity). Bam! Out popped the answer.
+
+My approach basically decomposes the bus schedule into tuples of bus position and periodicity (id). Sort the list on periodicity. Going from the bus with the largest periodicity, we know its starting position (periodicity - position). Then iterate, incrementing by the periodicity, to find the timestamp that satisfies the next bus. The periodicity is now the product of those two periods. Continue for each bus. The answer is a very large number but it solves very quickly.
+
+## Day 14
+
+Basically just fiddling with bitmasks.
+
+## Day 15
+
+This was a bit strange. I solved part 1 using a dict to save previous numbers' turns and for part 2, I just turned it into a function and called it again. It solved in a timely manner (not instantly, but after a few seconds). I was left wondering what was the catch? Maybe if you solve part 1 naively by searching back through a list of responses, it doesn't scale.
