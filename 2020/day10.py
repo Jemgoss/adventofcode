@@ -1,6 +1,6 @@
 from collections import Counter
 
-with open("10.input") as f:
+with open("day10.input") as f:
     data = map(int, f.readlines())
 
 # data = [int(l) for l in """16

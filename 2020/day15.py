@@ -1,4 +1,4 @@
-with open("15.input") as f:
+with open("day15.input") as f:
     data = [int(x) for x in f.readline().rstrip().split(",")]
 
 #data = [0,3,6]

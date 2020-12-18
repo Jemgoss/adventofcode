@@ -1,6 +1,6 @@
 import re
 
-with open("4.input") as f:
+with open("day4.input") as f:
     passports = [x.replace("\n", " ").strip() for x in f.read().split("\n\n")]
 
 # Part 1

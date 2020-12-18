@@ -1,6 +1,6 @@
 from functools import reduce
 
-with open("13.input") as f:
+with open("day13.input") as f:
     timestamp = int(f.readline())
     bus_ids = f.readline().rstrip("\n")
 

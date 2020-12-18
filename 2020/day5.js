@@ -1,4 +1,4 @@
-const data = require('fs').readFileSync('5.input', 'utf8').trim().split("\n");
+const data = require('fs').readFileSync('day5.input', 'utf8').trim().split("\n");
 
 // Part 1
 const decoder = (acc, key) => {

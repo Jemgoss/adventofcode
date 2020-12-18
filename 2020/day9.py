@@ -1,6 +1,6 @@
 from itertools import combinations
 
-with open("9.input") as f:
+with open("day9.input") as f:
     data = [int(l) for l in f.readlines()]
 
 # Part 1

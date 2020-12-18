@@ -1,4 +1,4 @@
-const data = require('fs').readFileSync('6.input', 'utf8').trim().split("\n\n");
+const data = require('fs').readFileSync('day6.input', 'utf8').trim().split("\n\n");
 
 // Part 1
 console.log((data.map(group => (new Set([...group.replaceAll("\n", "")])).size)).reduce((a, b) => a + b));

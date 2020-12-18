@@ -1,6 +1,6 @@
 import math
 
-with open("12.input") as f:
+with open("day12.input") as f:
     data = f.readlines()
 
 # data = """F10

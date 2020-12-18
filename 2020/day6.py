@@ -1,4 +1,4 @@
-with open("6.input") as f:
+with open("day6.input") as f:
     data = f.read().rstrip('\n').split("\n\n")
 
 # Part 1

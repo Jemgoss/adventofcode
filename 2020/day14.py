@@ -1,6 +1,6 @@
 from functools import reduce
 
-with open("14.input") as f:
+with open("day14.input") as f:
     data = [l.rstrip("\n") for l in f.readlines()]
 
 # data = """mask = XXXXXXXXXXXXXXXXXXXXXXXXXXXXX1XXXX0X

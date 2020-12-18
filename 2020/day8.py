@@ -1,4 +1,4 @@
-with open("8.input") as f:
+with open("day8.input") as f:
     data = [l.rstrip("\n") for l in f.readlines()]
 
 # Test data

@@ -1,4 +1,4 @@
-with open("7.input") as f:
+with open("day7.input") as f:
     data = f.readlines()
 
 # Part 1

@@ -1,4 +1,4 @@
-with open("1.input") as f:
+with open("day1.input") as f:
     data = [int(x) for x in f.readlines()]
 
 # Part 1

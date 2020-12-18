@@ -5,15 +5,15 @@ In general, my solutions are supposed to be generalized and <i>ought</i> to work
 ## Day 1
 
 ### Python
-1.py was my first stab. Simple enumeration of combinations of a list. Python doesn't have a native list.find() or list.search() function, so I had to use a for loop. I abused the next() function with a generator expression (rather than a list comprehension, which would unnecessarily create a large list only for the purpose of enumerating it). But I'm using a list slice, so this kind of makes that optimization moot!
+day1.py was my first stab. Simple enumeration of combinations of a list. Python doesn't have a native list.find() or list.search() function, so I had to use a for loop. I abused the next() function with a generator expression (rather than a list comprehension, which would unnecessarily create a large list only for the purpose of enumerating it). But I'm using a list slice, so this kind of makes that optimization moot!
 
 Part 2 is just an extension of the same algorithm.
 
-1b.py is a different take on the same problem: this time use the itertools.combinations() iterator to supply combination indexes, whoch should be more efficient. Using the native sum() and math.prod() functions, we can avoid messy loops and counters.
+day1b.py is a different take on the same problem: this time use the itertools.combinations() iterator to supply combination indexes, whoch should be more efficient. Using the native sum() and math.prod() functions, we can avoid messy loops and counters.
 
 ### JavaScript
 
-1.js is my JS take, again trying to use functional constructs and avoid messy loops and counters.
+day1.js is my JS take, again trying to use functional constructs and avoid messy loops and counters.
 
 ## Day 2
 
@@ -32,15 +32,15 @@ Using sets to find missing keys. Part 2 uses a bit more regex's and validator fu
 
 ## Day 5
 
-In my first stab, 5.py, I read a bit too literally the decoding algorithm for a seat.
+In my first stab, day5.py, I read a bit too literally the decoding algorithm for a seat.
 
 Part 2 is a bit clumsy, removing assigned seats from a set of seats from 0 to max_seat_no + 1, then having to remove the initial consecutive seats from the set to leave our single unoccupied seat.
 
-For 5b.py, I realized the seat code is simply a binary number using BR instead of 1 and LF instead of 0. Use int(x, 2) to binary parse that. Also simplified the set arithmatic.
+For day5b.py, I realized the seat code is simply a binary number using BR instead of 1 and LF instead of 0. Use int(x, 2) to binary parse that. Also simplified the set arithmatic.
 
-The problem with 5b.py is that it uses list comprehensions to create temporary lists. That's unnecessary and inefficient, as it could lead to excessive resource use for large sets of data.
+The problem with day5b.py is that it uses list comprehensions to create temporary lists. That's unnecessary and inefficient, as it could lead to excessive resource use for large sets of data.
 
-5c.py improves the solution by using a generator function (lazy evaluation) that yields the seat numbers when necessary to be acted upon instead of creating a list the size of the data set. I also realized the seat assignments set only need go from lowest to highest.
+day5c.py improves the solution by using a generator function (lazy evaluation) that yields the seat numbers when necessary to be acted upon instead of creating a list the size of the data set. I also realized the seat assignments set only need go from lowest to highest.
 
 ## Day 6
 

@@ -1,5 +1,5 @@
 const fs = require('fs');
-const data = fs.readFileSync('1.input', 'utf8').split("\n").map(x => parseInt(x));
+const data = fs.readFileSync('day1.input', 'utf8').split("\n").map(x => parseInt(x));
 
 { // Part 1
   var b = undefined;

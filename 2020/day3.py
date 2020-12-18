@@ -1,7 +1,7 @@
 from math import prod
 
 data = []
-with open("3.input") as f:
+with open("day3.input") as f:
     for line in f:
         data.append(line.rstrip('\n'))
 

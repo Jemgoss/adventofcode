@@ -1,6 +1,6 @@
 import re
 
-with open("2.input") as f:
+with open("day2.input") as f:
     data = f.readlines()
 
 # "7-10 m: qmpgmmsmmmmkmmkj"

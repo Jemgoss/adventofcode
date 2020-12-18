@@ -1,6 +1,6 @@
 from functools import reduce
 
-with open("5.input") as f:
+with open("day5.input") as f:
     data = [l.rstrip("\n") for l in f.readlines()]
 
 # Part 1
