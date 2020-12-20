@@ -7,7 +7,7 @@ with open("day15.input") as f:
 
 def run_sequence(data, turns):
     positions = dict()
-    for turn, num in enumerate(data, start = 1):
+    for turn, num in enumerate(data, start=1):
         positions[num] = turn
 
     prev = None
